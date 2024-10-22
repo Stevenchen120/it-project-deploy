@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australian Dictionary of Biography - Search Page</title>
+    <link rel="icon" href="../static/favicon.ico" />
+    <link rel="stylesheet" href="Search_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playwrite+CU:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <a href="home_page.html">
+                    <img src="../static/Logo.jpeg" alt="Logo" class="logo">
+                </a>
+                <h1>Australian Dictionary of Biography</h1>
+            </div>
+            <div class="right-header">
+                <a href="#" class="contact-us">Contact us</a>
+                <span></span>
+                <a href="Login.html" class="login">Login</a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Category</a></li>
+                <li><a href="home_page.html">Home</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="search-section">
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <span class="search-label">Your search for</span>
+                        <select id="filter" name="filter">
+                            <option value="all">All Fields</option>
+                            <option value="given-name">Given Name</option>
+                            <option value="family">Family</option>
+                            <option value="name">Name</option>
+                            <option value="birth">Birth</option>
+                            <option value="death">Death</option>
+                            <option value="occupation">Occupation</option>
+                        </select>
+                        <input type="search" id="search-input" placeholder="Search..." />
+                        <button id="search-btn">🔍</button>
+                    </div>
+                </div>
+                <div class="character-cards" id="character-card-container">
+                    <!-- Card template for characters -->
+                    <template id="character-card-template">
+                        <div class="card">
+                            <div class="character-name"></div>
+                            <div class="content"></div>
+                        </div>
+                    </template>
+                </div>
+            </section>
+        </main>
+
+        <script src="character_info.js"></script>
+    </div>
+</body>
+
+</html>

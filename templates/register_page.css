@@ -1,0 +1,203 @@
+/* General Styles */
+
+.playwrite-cu-custom {
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.background-overlay {
+    background: url('../static/login_background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.3; /* 调整背景透明度 */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* 确保背景在其他元素的后面 */
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    height: 100vh;
+    position: relative; /* 确保它在背景之上 */
+    z-index: 1; /* 确保容器在背景之上 */
+}
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center; /* 控制图标和标题的垂直对齐 */
+    padding: 0px 10px; /* 控制内边距 */
+    background-color: rgba(255, 255, 255, 0.3); /* 背景颜色和透明度 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+    position: fixed; /* 控制位置 */
+    top: 0;
+    left: 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: 'Playwrite CU', cursive;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 300;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes button container to the right */
+}
+.login-button {
+    background: none;
+    color: #a52a2a;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.login-button:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Form Container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 600px;
+    margin-top: 70px;
+}
+/* Container for Last Name and Family Name */
+.name-container {
+    display: flex;
+    gap: 20px; /* Adjust the gap between the input fields */
+    margin-bottom: 15px; /* Space below the container */
+}
+
+.name-input {
+    flex: 1; /* Ensures equal width for both input fields */
+}
+
+input[type="text"] {
+    width: 100%; /* Makes the input field fill its container */
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Other styles for the form and container remain unchanged */
+
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #a52a2a;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+button[type="submit"]:hover {
+    background-color: #8b0000;
+}
+
+.form-container p a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-container p a:hover {
+    text-decoration: underline;
+}
+
+.sign-in-text {
+    width: 100%; /* 确保容器占据整行 */
+}
+
+.sign-in-link {
+    float: right; /* 将链接浮动到右边 */
+    text-decoration: none; /* 去除下划线 */
+    color: #333;
+}
+
+.sign-in-link:hover {
+    text-decoration: underline;
+}

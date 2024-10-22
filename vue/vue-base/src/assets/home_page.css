@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #4b1b1b; /* Dark red background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px; /* Reduced padding for smaller header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.category {
+  font-size: 24px;
+  background-color: #693c3c;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Pushes the right-header to the far right */
+}
+
+.right-header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-left: 20px; /* Adds spacing between Contact us and Login */
+}
+
+.right-header .contact-us::before {
+  content: "\2709"; /* Email icon */
+  margin-right: 5px;
+}
+
+.right-header .login::before {
+  content: "\1F464"; /* User icon */
+  margin-right: 5px;
+}
+.title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.title h1 {
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  letter-spacing: 3px;
+}
+
+.image-container {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+}
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  width: 600px;
+  padding: 10px;
+  padding-left: 40px; /* Leave space for the icon */
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: #fff;
+  color: #000;
+  outline: none;
+}
+
+.search-container::before {
+  content: "\1F50D"; /* Unicode for magnifying glass (search icon) */
+  position: absolute;
+  left: 10px;
+  font-size: 20px;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+}

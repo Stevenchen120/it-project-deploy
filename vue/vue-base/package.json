@@ -1,0 +1,26 @@
+{
+  "name": "vue-base",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "element-plus": "^2.8.1",
+    "lucide-vue-next": "^0.447.0",
+    "toastify-js": "^1.12.0",
+    "vue": "^3.4.29",
+    "vue-router": "^4.4.3",
+    "vue-star-rating": "^1.7.0",
+    "vue-toastification": "^2.0.0-rc.5",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.1"
+  }
+}

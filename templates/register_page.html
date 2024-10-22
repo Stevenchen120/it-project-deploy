@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australian Dictionary of Biography - Create an Account</title>
+    <link rel="icon" href="../static/favicon.ico"/>
+    <link rel="stylesheet" href="register_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <a href="home_page.html">
+                    <img src="../static/Logo.jpeg" alt="Logo" class="logo">
+                </a>
+                <h1>Australian Dictionary of Biography</h1>
+            </div>
+            <div class="button-container">
+                <a href="login.html" class="login-button">Login</a>
+            </div>
+        </header>
+
+        <div class="form-container">
+            <h2>Create an account</h2>
+            <p>Please submit an email and username and create a password to create your account. You'll be asked to enter a code that will arrive in your inbox.</p>
+            <form action="#" method="POST">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+
+                <div class="name-container">
+            <div class="name-input">
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+                <div class="name-input">
+                    <label for="family-name">Family Name*</label>
+                    <input type="text" id="family-name" name="family-name" required>
+                </div>
+            </div>
+                <label for="username">Create Username*</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Create Password*</label>
+                <input type="password" id="password" name="password" required>
+                <p>Password must be at least 6 characters.</p>
+
+                <button type="submit">Create Account</button>
+            </form>
+            <p> <p class="sign-in-text">Already have an account?<a href="login.html"> Sign in</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
